@@ -14,7 +14,12 @@
       <div class="left-container">
         <div class="top-container">
           <h2 class="to-do">
-            <input type="text" v-model="task" placeholder="Enter task" />
+            <input
+              type="text"
+              v-model="task"
+              placeholder="Enter task"
+              @keyup.enter="submitTask"
+            />
           </h2>
           <button @click="submitTask">Submit</button>
         </div>
