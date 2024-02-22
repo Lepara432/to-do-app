@@ -55,7 +55,7 @@
           />
 
           <span>{{ task.label }}</span>
-          <button @click="deleteTaskfromdoneList">Remove</button>
+          <button @click="deleteTaskfromdoneList(index)">Remove</button>
         </div>
       </div>
     </div>
