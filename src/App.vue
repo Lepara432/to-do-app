@@ -19,12 +19,7 @@
           <button @click="submitTask">Submit</button>
         </div>
 
-        <div
-          draggable="true"
-          v-for="(task, index) in todoList"
-          :key="index"
-          class="task"
-        >
+        <div v-for="(task, index) in todoList" :key="index" class="task">
           <input
             type="checkbox"
             v-model="task.done"
@@ -42,12 +37,7 @@
           <button @click="deleteAll(index)">Delete All</button>
         </div>
 
-        <div
-          draggable="true"
-          v-for="(task, index) in doneList"
-          :key="index"
-          class="task"
-        >
+        <div v-for="(task, index) in doneList" :key="index" class="task">
           <input
             type="checkbox"
             v-model="task.done"
@@ -55,7 +45,7 @@
           />
 
           <span>{{ task.label }}</span>
-          <button @click="deleteTaskfromdoneList">Remove</button>
+          <button @click="deleteTaskfromdoneList(index)">Remove</button>
         </div>
       </div>
     </div>
@@ -63,12 +53,7 @@
 </template>
 
 <script>
-import draggable from "vuedraggable";
-
 export default {
-  components: {
-    draggable,
-  },
   data() {
     return {
       task: "",

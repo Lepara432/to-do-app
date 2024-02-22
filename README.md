@@ -4,7 +4,7 @@ A simple task management application built with Vue.js. Users can manage tasks b
 
 ## Features
 
-- Drag and drop tasks between To-do and Done lists
+- Adding a new task to the list
 - Editable labels for tasks in the To-do list
 - Checkbox for marking tasks as done in the To-do list
 - Ability to move tasks back from the Done list to the To-do list
