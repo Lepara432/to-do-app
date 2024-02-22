@@ -1,6 +1,6 @@
 # To-do-app
 
-A simple task management application built with Vue.js. Users can manage tasks by moving them between a To-do list and a Done list, with additional features such as edit and remove.
+A simple task management application built with Vue.js. Users can manage tasks by moving them between a To-do and a Done list..
 
 ## Features
 
